@@ -1,0 +1,87 @@
+.Somos{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    background-color: var(--fondo);
+}
+
+.fundadores{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto{
+    float: left;
+    width: 50%;
+    height: inherit;  
+}
+
+.foto > div{
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 200px;
+    margin: auto auto 40px auto;
+    border-radius: 100%;
+}
+
+.foto > p{
+    color: var(--secondary-color-dark);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.foto2{
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+
+.foto2 > div{
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 200px;
+    margin: auto auto 40px auto;
+    border-radius: 100%;
+}
+
+.foto2 > p{
+    color: var(--secondary-color-dark);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3{
+    color: var(--light);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.leyenda{
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 40px 200px;
+    text-align: center;
+}
+
+@media (max-width: 770px){
+    .foto{
+        width: 100%;
+    }
+
+    .foto2{
+        width: 100%;
+    }
+
+    .leyenda{
+        padding: 40px 10px;
+        text-align: center;
+    }
+}

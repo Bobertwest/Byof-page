@@ -1,0 +1,45 @@
+.aplicaciones{
+    width: 100%;
+    justify-content: center;
+}
+
+.aplicaciones > .texto{
+    margin: 50px auto 0 auto;
+    text-align: center;
+    width: 60%;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.aplicaciones > .tiendas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aplicaciones > .tiendas > a{
+    float: left;
+    width: 20%;
+    margin: 0 5% 0 5%;
+}
+
+.aplicaciones > .tiendas > a > img{
+    width: 100%;
+}
+
+@media (max-width: 770px){
+    .aplicaciones > .tiendas > a{
+        width: 100%;
+    }
+
+    .aplicaciones > .texto{
+        margin: 50px auto 0 auto;
+        text-align: center;
+        width: 60%;
+        font-weight: 600;
+        font-size: 30px;
+        color: var(--primary-color);
+    }
+}
