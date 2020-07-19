@@ -2,9 +2,11 @@
 @import "./menu.css";
 @import "./paleta.css";
 @import "./tecnologia.css";
+@import "./usamos.css";
 @import "./productos.css";
 @import "./servicios.css";
 @import "./somos.css";
+@import "./footer.css";
 
 *{
     box-sizing: border-box;
@@ -16,7 +18,7 @@ body{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../imagenes/space.jpg");
+    background-image: url("../imagenes/network-3885328.jpg");
     background-attachment: fixed;
     background-size: cover;
 }

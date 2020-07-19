@@ -1,45 +1,42 @@
 .aplicaciones{
     width: 100%;
+    margin: 0;
     justify-content: center;
+    padding: 0 0 10px 0;
+    background-color: var(--primary-color-dark);
+    border-top: solid 2px var(--primary-color);
 }
 
 .aplicaciones > .texto{
-    margin: 50px auto 0 auto;
-    text-align: center;
-    width: 60%;
-    font-weight: 600;
-    font-size: 40px;
-    color: var(--primary-color);
-}
-
-.aplicaciones > .tiendas{
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.aplicaciones > .tiendas > a{
-    float: left;
-    width: 20%;
-    margin: 0 5% 0 5%;
+.aplicaciones > .texto > h1{
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: var(--light);
 }
 
-.aplicaciones > .tiendas > a > img{
+
+.aplicaciones > .tiendas{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-@media (max-width: 770px){
-    .aplicaciones > .tiendas > a{
-        width: 100%;
-    }
+.aplicaciones > .tiendas > div{
+    float: left;
+    margin: 0;
+    width: 50%;
+    flex-grow: 1;
+    text-align: center;
+}
 
-    .aplicaciones > .texto{
-        margin: 50px auto 0 auto;
-        text-align: center;
-        width: 60%;
-        font-weight: 600;
-        font-size: 30px;
-        color: var(--primary-color);
-    }
+.aplicaciones > .tiendas > div > a > img{
+    width: 50%;
+    height: auto;
 }

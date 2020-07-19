@@ -1,87 +1,57 @@
 .Somos{
     width: 100%;
     height: auto;
-    padding-top: 50px;
-    background-color: var(--fondo);
+    background-color: var(--primary-color);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--light);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Somos > h3{
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .fundadores{
+    margin: 20px 0;
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.foto{
-    float: left;
+.Somos > .fundadores > .foto{
     width: 50%;
-    height: inherit;  
-}
-
-.foto > div{
-    background-color: var(--primary-color);
-    width: 200px;
-    height: 200px;
-    margin: auto auto 40px auto;
-    border-radius: 100%;
-}
-
-.foto > p{
-    color: var(--secondary-color-dark);
-    font-size: 20px;
-    font-weight: 600;
+    align-items: center;
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.foto2{
-    float: left;
+.Somos > .fundadores > .foto > img{
     width: 50%;
-    height: inherit;
-}
-
-.foto2 > div{
-    background-color: var(--primary-color);
-    width: 200px;
-    height: 200px;
-    margin: auto auto 40px auto;
+    height: auto;
     border-radius: 100%;
+    border: solid 3px var(--secondary-color-dark);
 }
-
-.foto2 > p{
-    color: var(--secondary-color-dark);
+.Somos > span{
     font-size: 20px;
-    font-weight: 600;
-    text-align: center;
+    font-style: italic;
 }
 
-h3{
-    color: var(--light);
-    font-size: 30px;
-    text-align: center;
-    font-weight: 550;
-    text-transform: capitalize;
-    margin: auto;
-    padding-bottom: 40px;
+.Somos > .leyenda{
+    font-size: 130%;
+    margin: 10px 10%;
 }
 
-.leyenda{
-    color: var(--secondary-color);
-    font-size: 20px;
-    padding: 40px 200px;
-    text-align: center;
-}
+
 
 @media (max-width: 770px){
-    .foto{
+    .Somos > .fundadores > .foto{
         width: 100%;
-    }
-
-    .foto2{
-        width: 100%;
-    }
-
-    .leyenda{
-        padding: 40px 10px;
-        text-align: center;
     }
 }

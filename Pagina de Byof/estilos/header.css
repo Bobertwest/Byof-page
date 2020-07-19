@@ -1,125 +1,76 @@
-.header{
-    padding-top: 15px;
-    padding-bottom: 25px;
-    display: flex;
-    width: 100%;
+.encabezado{
     background-color: var(--light);
-}
-
-.header > img{
-    float: left;
-    width: 230px;
-    margin-left: 2%;
-}
-
-.header > .espacio{
-    width: 80%;
-    padding: 0;
     margin: 0;
-}
-
-.header > .espacio > .Busqueda{
-    width: 40%;
-    float: right;
-    padding: 5px;
-    margin: 20px 30px;
-    border-bottom: solid 2px var(--secondary-color-dark);
-    border-left: solid 2px var(--secondary-color-dark);
-    border-top: none;
-    border-right: none;
-    outline: 0;
-}
-
-.header > .espacio > .Busqueda:focus{
-    box-shadow: none;
-}
-
-
-.header > .opciones{
+    padding: 1% 2%;
+    width: 100%;
     display: flex;
-    width: 30%;
-    padding: 10px 10px 10px 15px;
-    margin-right: 50px;
 }
 
-.header > .opciones > div > a{
-    text-decoration: none;
-}
-
-.header > .opciones > div > a > .cuenta:hover{
-    border-bottom: solid 5px rgb(3, 78, 216);
-    padding-bottom: 4px;
-    transition: .4s;
-}
-
-.header > .opciones > div > a > .carrito:hover{
-    border-bottom: solid 5px rgb(3, 78, 216);
-    padding-bottom: 5px;
-    transition: .4s;
-}
-
-.header > .opciones > div > a > .cuenta{
-    width: 50px;
+.encabezado > .header{
+    width: 10%;
+    display: flex;
+    height: auto;
     float: left;
-    padding: 5px 10px 9px;
-    text-align: center;
 }
 
-.header > .opciones > div > a > .carrito{
-    width: 65px;
-    float: left;
-    padding: 5px 10px 10px;
-   
-    text-align: center;
+.encabezado > .header > a > .logo{
+    width: 100%;
+    height: auto;
 }
 
-@media (max-width: 770px){
+#menu_resp{
+    display: none;
+}
 
-    .header{
-        width: 100%;
-        justify-content: flex-start;
-        padding-right: 10px;
-    }
+.encabezado > .header > label{
+    display: flex;
+    background-color: var(--light);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-    .header > img{
-        width: 30%;
-        height: 50%;
-        margin-top: 20px;
-    }
+.encabezado > .header > label > .fas{
+    color: var(--primary-color);
+    margin: 0;
+    height: inherit;
+}
 
-    .header > .espacio{
-        width: 90%;
-    }
-    .header > .espacio > .Busqueda{
-        float: left;
-        margin-left: 5%;
-        width: 100%;
-    }
+.encabezado > .header > label{
+    display: none;
+}
 
-    .header > .opciones{
-        display: block;
-        margin-right: 65px;
-        /*margin-left: 35%;*/
-    }
-
-    .header > .opciones > div > a > .cuenta{
-        float: left;
-        /*margin-left: 7%;*/
-        text-align: center;
-        width: 40px;
-    }
-    
-    .header > .opciones > div > a > .carrito{
-        float: left;
-        margin-left: 0;
-        text-align: center;
-        width: 50px;
-    }
-    
-    .header > .opciones > div > a:hover{
-        background-color: var(--secondary-color-dark);
+@media (max-width: 910px){
+    .encabezado{
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0);
         padding: 0;
-        margin: 0;
     }
 
+    .encabezado > .header{
+        width: 100%;
+        display: flex;
+        height: auto;
+        padding: 1% 2%;
+        margin: 0;
+        background-color: var(--light);
+    }
+
+    .encabezado > .header > a > .logo{
+        width: 80px;
+    }
+
+    .encabezado > .header > label{
+        display: flex;
+        width: 75%;
+        margin-top: 1px
+    }
+    .encabezado > .header > label > .fa{
+        float: right;
+    }
+    #menu_resp:checked ~ .menu{
+        transform: translateX(0%);
+        transition: 0.4s;
+    }
 }
